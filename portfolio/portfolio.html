@@ -6,89 +6,223 @@
   <title>My Portfolio</title>
   <style>
     body {
-  font-family: Arial, sans-serif;
+  font-family:'Times New Roman', Times, serif;
+  font-size:medium;
   margin: 0;
   padding: 0;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
+.navbar ul{
+            list-style: none;
+            background: rgb(0, 0, 0);
+            padding: 0;
+            margin: 0;
+            /* text-align: right; */
+            display: flex;
+          
+        }
+        .navbar li{
+            
+            display: inline-block;
+            
+            
+        }
 
-header h1 {
-  margin: 0;
-}
+       .navbar li:first-child {
+            color: #ffffff;
+            margin-right: auto;
+            
+        }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
+        .navbar li a{
+            color: #ffffff;
+            
+            display: block;
+             padding: 10px;
+            font-size:15px; 
+            /* text-transform:uppercase;  */
+            font-weight: bold; 
+            text-align: center;
+            text-decoration: none;
+        }
+        .navbar li a:hover{
+            background-color: rgb(137, 133, 131);
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
+        }
 
 section {
-  padding: 20px;
-}
-
-section h2 {
+  padding-left: 5px; 
   margin-top: 0;
+  margin-bottom: 0;
 }
 
-.project {
-  margin-bottom: 20px;
+h2 {
+  margin-bottom:0px;
+  
 }
+h3 {
+  margin-top:0px;
+  margin-bottom:0px;
+   
+}
+h4 {
+  margin-top:0px;
+  margin-bottom:0px;
+  
+}
+
+p{
+  padding-left: 20px;
+}
+
 
   </style>
 </head>
 <body>
-
-  <!-- Header Section -->
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
+  
+<div class="navbar">
+  
+    <ul>
+        <li><a href="#"><i><strong>TEJA SREE PULAKANTI</strong></i></a></li>  
+        <li><a href="#About"> About Me</a></li>
+        <li><a href="#Experience"> Experience</a></li>
+        <li><a href="#skills"> Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Certs">Certifications and Publications</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        
+    </ul>
+</div>
   <!-- About Me Section -->
-  <section id="about">
+  <section id="About">
     <h2>About Me</h2>
-    <p>Welcome to my portfolio! I'm [Your Name], a [Your Profession] based in [Your Location]. Here you can find information about my skills, experiences, and projects.</p>
+    <p>Hi! I'm <i><strong>Teja Sree Pulakanti</strong> </i> from India. I hold a master's degree in Computer Science from the University of Massachusetts, Lowell. With over 2 years of IT experience, 
+      I have worked as a Junior Automation Tester for Bank of America at Accenture. During my bachelor's, I interned at Verso Solutions, focusing on web technologies.
+    </p>
   </section>
+<!-- Experience Section -->
+  <section id="Experience">
+    <h2>Professional Experience</h2>
+    <!-- <div class="experience"> -->
+      <h3>Accenture Solutions, India </h3> 
+        <h4>Application Development Associate, Automation Testing</h4> 
+      <p>As an Automation Tester, I developed test strategies and configured test environments using Selenium and TestComplete, utilizing JUnit, TestNG, and Maven for unit testing. 
+        I created scripts with WebDriver, Selenium-IDE in Java, and TestComplete, implementing data-driven and BDD frameworks, and conducted functional, regression, and smoke testing 
+        with Quality Center and JIRA. I enhanced test coverage and integrated automated tests into Jenkins CI/CD pipelines, collaborating with developers to implement efficient DevOps
+        pipelines for high-quality software delivery.</p>
+    <!-- </div> -->
 
+    <!-- <div class="experience"> -->
+      <h3>Verso Solutions</h3>
+      <h4>Intern, Web Technology</h4> 
+      <p>Developed responsive web interfaces using HTML, CSS, JavaScript, and React.js, ensuring cross-browser compatibility. Collaborated with backend developers and designers to translate 
+        mockups into functional components. Conducted code reviews, browser testing, and optimized performance for user-friendly experiences.</p>
+    <!-- </div> -->
+  </section>
+ <!-- skills Section -->
+  <section id="skills">
+    <h2 style="padding-bottom:20px;">Skills</h2>
+    
+    <table border="1px" style="margin-left: 20px;">
+        <tr>
+            <td>
+                Programming Skills:
+            </td>
+            <td>
+              C, C++, Java, Python, SQL,  JavaScript, Data Structures and Algorithms
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Technical Skills:
+            </td>
+            <td>
+              Selenium Automation using java (WebDriver, IDE), Maven, TestComplete, Junit, TestNG, Cucumber, AWS,Jenkins (CI/CD Pipelines), GIT
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Web Technologies
+            </td>
+            <td>
+              HTML, CSS, React, NodeJS, ExpressJS, MongoDB, Spring boot
+            </td>
+        </tr>
+        
+
+        <tr>
+            <td>
+              Tools:
+            </td>
+            <td>
+              JIRA, MYSQL, Quality Center
+            </td>
+        </tr>
+    </table>
+
+  </section>
   <!-- Portfolio Section -->
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="project">
-      <h3>Project Title 1</h3>
-      <p>Description of project 1.</p>
-    </div>
-    <div class="project">
-      <h3>Project Title 2</h3>
-      <p>Description of project 2.</p>
-    </div>
-    <!-- Add more projects as needed -->
+  <section id="Projects">
+    <h2>Projects</h2>
+    <!-- <div class="project"> -->
+  <ul>
+      <li><strong>Color Detection using OpenCV:</strong> Developed program which helps in detecting every color in a given input which is specifically useful for color blind people.</li>
+        <li><strong>Object Detection with Voice Sensor and Cartooning the image:</strong> Object detection involves identifying objects in an image and converting their names into speech, while also cartooning the input image.</li>
+          <li><strong>Sign Language Recognition Web Application:</strong> This is a web-based application designed to recognize American Sign Language (ASL) using various algorithms. Users can input ASL signs through either images or live camera capture.</li>
+            <li><strong>Travel App: </strong>This is a dynamic travel-themed web application, drawing inspiration from Airbnb's user-friendly interface. Implemented robust features for property listings, user profiles, and secure booking transactions.</li>
+              <li>Implemented Graph Neural Networks (GCN, GraphSAGE, GAT) on CORA (node) and ENZYMES (graph) datasets, evaluating their performance for classification tasks, identifying the most effective model based on validation accuracy.</li>
+
+  </ul>
+  </section>
+<!-- Education Section -->
+  <section id="Education">
+    <h2>Education</h2>
+
+    <ul>
+      <li style="padding-bottom: 0px; "><p style="padding-left: 20px;"> University of Massachusetts Lowell, MA, 05/2024<br>
+Master of Science in Computer Science <br> Cumulative GPA:</strong>3.5/4</p></li>
+
+<li style="padding-bottom: 0px; "><p style="padding-left: 20px;"> Sreyas INstitute of Engineering and Technology, India, 08/2021<br>
+  Bachelor of Technology in Computer Science <br> Cumulative GPA:</strong>3.2/4</p></li>
+
+</ul>
+
+  </section>
+<!-- Certication Section -->
+  <section id="Certs">
+    <h2>Certifications</h2>
+    <ul> 
+      <li> Certified in Introduction to Python, HTML5 and CSS3 through Coursera:
+        <a href="https://www.coursera.org/account/accomplishments/certificate/QCDMDWHV2AMT">Python, </a>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/BKQL6J2ZDTH3"> HTML5, </a>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/NGUUGWUL4G6T">CSS3 </a>
+            </li>
+            <li>Basic Image Classification with TensorFlow: <a href="https://www.coursera.org/account/accomplishments/certificate/U87NPQKZYY68">Project</a> </li>
+<li>
+	Certified in C Language: <a href="https://www.coursera.org/account/accomplishments/certificate/U87NPQKZYY68"> C </a> </li> 
+  <li>
+    Amazon Certified Cloud Practitioner: <a href="https://drive.google.com/file/d/1MEdy1qJ_nnEj0HGQcu61bzESAbxr1XVU/view">AWS</a></li>
+  <li> Object Detection with Voice Sensor and Cartooning the image: <a href="https://www.coursera.org/account/accomplishments/certificate/U87NPQKZYY68"> Published Paper </a></li>
+</ul>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>You can reach out to me via email at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <h2 style="padding-bottom: 10px;">Contact Me</h2>
+    <table>
+      <tr >
+        <td style="padding-left: 20px;">• <a href="mailto:tejasree.pulakanti@gmail.com"> Mail</a></td>
+        <td style="padding-left:20px; padding-right:20px;">• +1 9786548891</td>
+        <td>• <a href="https://www.linkedin.com/in/teja-sree-b22400182/">LinkedIn </a></td>
+      </tr>
+    </table>
+     
+    
+
+    
   </section>
 
 </body>
